@@ -1,7 +1,7 @@
 # cloud-cover-classification-ai4eo
 The classification of cloud 
 ## Project Overview
-This project focuses on cloud cover classification using Sentinel-3 OLCI satellite imagery. The objective is to identify cloud-covered pixels by analysing spectral information from selected bands and applying a machine learning model.
+This project focuses on cloud cover classification using Sentinel-2 satellite imagery. The objective is to identify cloud-covered pixels by analysing spectral information from selected bands and applying a machine learning model.
 
 The workflow includes data preprocessing, feature extraction, model training, and the generation of a cloud mask. The final output is a classification map distinguishing cloud and non-cloud regions.
 ## Motivation
