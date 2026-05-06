@@ -1,8 +1,16 @@
 # cloud-cover-classification-ai4eo
 The classification of cloud 
 ## Project Overview
-Clouds represent one of the most significant sources of uncertainty in optical satellite imagery. Because clouds block the view of the Earth's surface, they reduce the usability and reliability of Earth Observation (EO) data. This limitation affects a wide range of applications, including land cover classification, vegetation monitoring, climate analysis, and disaster response such as flood detection.
+This project focuses on cloud cover classification using Sentinel-2 satellite imagery. The objective is to identify cloud-covered pixels by analysing spectral information from selected bands and applying a machine learning model.
 
-Accurate cloud detection is therefore a critical preprocessing step in satellite image analysis. Without effective cloud masking, downstream models may produce incorrect or misleading results. While recent advances in deep learning (e.g., convolutional neural networks) have achieved high performance in cloud detection tasks, these methods often require large labelled datasets and substantial computational resources.
+The workflow includes data preprocessing, feature extraction, model training, and the generation of a cloud mask. The final output is a classification map distinguishing cloud and non-cloud regions.
+## Motivation
+Optical satellite imagery, such as data from the Sentinel-2 mission, plays a key role in Earth Observation (EO) by providing high-resolution information about the Earth's surface. These data are widely used in applications such as land cover mapping, vegetation monitoring, environmental assessment, and disaster management.
 
-In this project, we aim to develop a simple, interpretable, and computationally efficient approach for detecting cloud-covered pixels in Sentinel-2 imagery. By using spectral features derived from key bands (Blue, Green, Red, and Near Infrared) and applying a classical machine learning model such as Random Forest, we seek to provide a lightweight alternative to more complex approaches.
+However, one of the main limitations of optical imagery is the presence of clouds. Clouds can partially or completely obscure the surface, leading to missing or unreliable information. As a result, many EO applications require an effective cloud detection step before further analysis can be performed.
+
+Traditional approaches to cloud detection often rely on simple thresholding techniques based on spectral properties. While these methods are computationally efficient, they may struggle in complex scenarios, such as thin clouds or bright surfaces.
+
+Recent advances in artificial intelligence, particularly machine learning and deep learning, have improved cloud detection performance. However, these methods often require large labelled datasets and significant computational resources.
+
+This project is motivated by the need for a balanced approach: developing a method that is both effective and computationally efficient. By using spectral features and a classical machine learning model, this work aims to provide a practical solution that can be applied in real-world EO workflows with lower environmental cost.
