@@ -21,5 +21,4 @@ The study area is located around London, United Kingdom. A bounding box was used
 The downloaded Sentinel-2 Level-2A product corresponds to tile **T30UYC**, which intersects the selected London study area. Since Sentinel-2 products are provided as full tiles, the downloaded image covers a larger area than the original query bounding box.
 
 This scene was selected because it contains extensive cloud coverage with varying cloud thickness and texture, making it suitable for testing unsupervised cloud classification methods.
-
-![Study Area](figures/location.jpeg)
+![Study Area](location.jpeg)
