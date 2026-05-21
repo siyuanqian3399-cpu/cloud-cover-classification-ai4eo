@@ -16,9 +16,15 @@ Recent advances in artificial intelligence, particularly machine learning and de
 This project is motivated by the need for a balanced approach: developing a method that is both effective and computationally efficient. By using spectral features and a classical machine learning model, this work aims to provide a practical solution that can be applied in real-world EO workflows with lower environmental cost.
 ## Study Area
 
-The study area is located around London, United Kingdom. A bounding box was used to query Sentinel-2 imagery from the Copernicus Data Space Ecosystem, covering longitudes from **-0.35 to 0.15** and latitudes from **51.35 to 51.65**.
+The study area is located around London, United Kingdom, and was selected using a geographic bounding box covering longitudes from **-0.35 to 0.15** and latitudes from **51.35 to 51.65**. This bounding box was used to query Sentinel-2 Level-2A imagery from the Copernicus Data Space Ecosystem.
 
-The downloaded Sentinel-2 Level-2A product corresponds to tile **T30UYC**, which intersects the selected London study area. Since Sentinel-2 products are provided as full tiles, the downloaded image covers a larger area than the original query bounding box.
+The downloaded Sentinel-2 product corresponds to tile **T30UYC**, which intersects the selected London study area. Since Sentinel-2 products are distributed as full tiles, the downloaded image covers a larger spatial extent than the initial query region.
 
-This scene was selected because it contains extensive cloud coverage with varying cloud thickness and texture, making it suitable for testing unsupervised cloud classification methods.
-![Study Area](location.jpeg)
+The selected scene contains extensive cloud coverage with varying cloud thickness and semi-transparent cloud structures. These characteristics make the scene suitable for testing unsupervised machine learning approaches for cloud classification.
+
+The RGB image generated from Sentinel-2 bands B02 (Blue), B03 (Green), and B04 (Red) was used for visual interpretation and as input for both K-Means clustering and Gaussian Mixture Model (GMM) classification workflows.
+
+<p align="center">
+  <img src="location.jpeg" alt="Study Area Location" width="48%">
+  <img src="satellite.jpeg" alt="Sentinel-2 RGB Image" width="48%">
+</p>
