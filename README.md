@@ -14,3 +14,10 @@ Traditional approaches to cloud detection often rely on simple thresholding tech
 Recent advances in artificial intelligence, particularly machine learning and deep learning, have improved cloud detection performance. However, these methods often require large labelled datasets and significant computational resources.
 
 This project is motivated by the need for a balanced approach: developing a method that is both effective and computationally efficient. By using spectral features and a classical machine learning model, this work aims to provide a practical solution that can be applied in real-world EO workflows with lower environmental cost.
+## Study Area
+
+The study area is located within Sentinel-2 tile T30UYC in Western Europe and was selected from a Sentinel-2B Level-2A scene acquired on 30 June 2022. The region was chosen due to its extensive cloud coverage and visible variations in cloud thickness and texture, making it suitable for cloud classification experiments using unsupervised machine learning methods.
+
+The analysed subset contains dense cloud formations, semi-transparent cloud regions, and partially visible surface features beneath the cloud layer. These characteristics provide a useful test environment for comparing the behaviour of K-Means clustering and Gaussian Mixture Models (GMM) in multispectral satellite imagery.
+
+To reduce computational cost and memory usage, only a cropped portion of the original Sentinel-2 scene was used during the analysis while preserving representative cloud structures for classification.
