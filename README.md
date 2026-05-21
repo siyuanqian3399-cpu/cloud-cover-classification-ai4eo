@@ -16,8 +16,10 @@ Recent advances in artificial intelligence, particularly machine learning and de
 This project is motivated by the need for a balanced approach: developing a method that is both effective and computationally efficient. By using spectral features and a classical machine learning model, this work aims to provide a practical solution that can be applied in real-world EO workflows with lower environmental cost.
 ## Study Area
 
-The study area is located within Sentinel-2 tile T30UYC in Western Europe and was selected from a Sentinel-2B Level-2A scene acquired on 30 June 2022. The region was chosen due to its extensive cloud coverage and visible variations in cloud thickness and texture, making it suitable for cloud classification experiments using unsupervised machine learning methods.
+The study area is located around London, United Kingdom. A bounding box was used to query Sentinel-2 imagery from the Copernicus Data Space Ecosystem, covering longitudes from **-0.35 to 0.15** and latitudes from **51.35 to 51.65**.
 
-The analysed subset contains dense cloud formations, semi-transparent cloud regions, and partially visible surface features beneath the cloud layer. These characteristics provide a useful test environment for comparing the behaviour of K-Means clustering and Gaussian Mixture Models (GMM) in multispectral satellite imagery.
+The downloaded Sentinel-2 Level-2A product corresponds to tile **T30UYC**, which intersects the selected London study area. Since Sentinel-2 products are provided as full tiles, the downloaded image covers a larger area than the original query bounding box.
 
-To reduce computational cost and memory usage, only a cropped portion of the original Sentinel-2 scene was used during the analysis while preserving representative cloud structures for classification.
+This scene was selected because it contains extensive cloud coverage with varying cloud thickness and texture, making it suitable for testing unsupervised cloud classification methods.
+
+![Study area and Sentinel-2 data coverage](figures/location.jpeg)
