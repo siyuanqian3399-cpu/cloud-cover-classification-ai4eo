@@ -26,5 +26,5 @@ The RGB image generated from Sentinel-2 bands B02 (Blue), B03 (Green), and B04 (
 
 <p align="center">
   <img src="location.jpeg" alt="Study Area Location" width="48%">
-  <img src="satellite.jpeg" alt="Sentinel-2 RGB Image" width="48%">
+  <img src="satellate.jpeg" alt="Satellite" width="48%">
 </p>
