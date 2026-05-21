@@ -22,4 +22,4 @@ The downloaded Sentinel-2 Level-2A product corresponds to tile **T30UYC**, which
 
 This scene was selected because it contains extensive cloud coverage with varying cloud thickness and texture, making it suitable for testing unsupervised cloud classification methods.
 
-!(figures/location.jpeg)
+![Study Area](figures/location.jpeg)
