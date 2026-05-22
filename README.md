@@ -52,5 +52,5 @@ The downloaded Sentinel-2 product was provided in `.SAFE` format. The relevant i
 The original RGB image shows extensive cloud coverage across the scene, including dense bright cloud regions, semi-transparent cloud structures, and partially visible surface features beneath the cloud layer. These characteristics make the scene suitable for testing cloud classification methods using multispectral satellite imagery.
 
 <p align="center">
-  <img src="original.jpeg" alt="Original Sentinel-2 RGB Image" width="70%">
+  <img src="original.png" alt="Original Sentinel-2 RGB Image" width="70%">
 </p>
