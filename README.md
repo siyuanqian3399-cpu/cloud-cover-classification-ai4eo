@@ -138,3 +138,51 @@ Non-cloud = 0
 In the final cloud mask, white pixels represent cloud-covered regions, while black pixels represent non-cloud regions or background areas.
 
 This cloud identification step was performed separately for both K-Means and GMM outputs, allowing the two methods to be compared visually and quantitatively.
+
+# Results
+
+## K-Means Clustering Results
+
+The K-Means clustering results show that the algorithm successfully separated the Sentinel-2 RGB image into several spectrally distinct regions. The cloud-covered areas were mainly grouped into the brightest clusters due to their high reflectance values across the visible RGB bands.
+
+<p align="center">
+  <img src="kmean.png" alt="K-Means Clustering Result" width="70%">
+</p>
+
+After selecting the brightest cluster, a binary cloud mask was generated. In the resulting cloud mask, white pixels represent cloud-covered regions, while black pixels represent non-cloud surfaces.
+
+<p align="center">
+  <img src="kmean01.png" alt="K-Means Cloud Mask" width="70%">
+</p>
+
+The K-Means cloud mask successfully identified the major cloud structures across the scene. Large dense cloud regions were clearly detected, and the overall cloud distribution corresponded well with the original RGB image. However, the boundaries between cloud and non-cloud regions appear relatively sharp and simplified, particularly around thin cloud edges and transitional regions.
+
+---
+
+## Gaussian Mixture Model (GMM) Results
+
+The Gaussian Mixture Model produced a more spatially detailed classification map compared with K-Means. Because GMM uses a probabilistic clustering approach, it was able to capture smoother transitions between different spectral regions within the image.
+
+<p align="center">
+  <img src="gmm(1).png" alt="GMM Clustering Result" width="70%">
+</p>
+
+The generated GMM cloud mask shows more fragmented and detailed cloud structures, especially around cloud edges and semi-transparent cloud regions.
+
+<p align="center">
+  <img src="gmm01.png" alt="GMM Cloud Mask" width="70%">
+</p>
+
+Compared with K-Means, the GMM result preserved more fine-scale spatial variability within the cloud-covered regions. Thin clouds and partially transparent cloud structures were more visible in the final mask. However, the increased sensitivity of GMM also introduced more noisy patterns and isolated cloud pixels in some areas.
+
+---
+
+# Discussion and Comparison
+
+Both K-Means and Gaussian Mixture Model successfully identified the main cloud-covered regions within the Sentinel-2 scene using only RGB reflectance information.
+
+The K-Means approach produced simpler and cleaner cloud masks with relatively smooth large-scale cloud structures. Its hard clustering behaviour generated clear boundaries between cloud and non-cloud regions, making the results easier to interpret visually. In addition, K-Means was computationally efficient and easier to implement.
+
+In contrast, the Gaussian Mixture Model produced more detailed and probabilistic cloud structures. The method was more sensitive to gradual spectral transitions and semi-transparent cloud features, resulting in more realistic cloud edges and finer spatial detail. However, this also introduced additional noise and fragmented patterns within some regions of the classification map.
+
+Overall, K-Means performed well for identifying large dense cloud regions, while GMM was more effective at representing subtle cloud variations and thin cloud structures. The comparison demonstrates that probabilistic clustering approaches can provide more detailed cloud characterisation, although at the cost of increased complexity and noise sensitivity.
