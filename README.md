@@ -54,3 +54,87 @@ The original RGB image shows extensive cloud coverage across the scene, includin
 <p align="center">
   <img src="original.png" alt="Original Sentinel-2 RGB Image" width="70%">
 </p>
+
+# Methodology
+
+## Method Overview
+
+This project uses unsupervised machine learning methods to classify cloud-covered regions from Sentinel-2 RGB imagery. The overall workflow consists of reading Sentinel-2 optical bands, stacking the RGB bands into a feature matrix, applying clustering algorithms, and extracting the cloud-related cluster as a binary cloud mask.
+
+Two unsupervised clustering methods were applied and compared:
+
+1. **K-Means Clustering**
+2. **Gaussian Mixture Model (GMM)**
+
+Both methods used the same input features: Sentinel-2 bands **B02 (Blue)**, **B03 (Green)**, and **B04 (Red)**.
+
+---
+
+## K-Means Clustering
+
+K-Means clustering is an unsupervised machine learning algorithm that groups pixels based on spectral similarity. In this project, each pixel was represented by its RGB reflectance values:
+
+```text
+Pixel = [Red, Green, Blue]
+```
+
+The algorithm divides the image pixels into a fixed number of clusters. Pixels with similar RGB values are assigned to the same cluster.
+
+K-Means performs **hard clustering**, meaning each pixel can only belong to one cluster. This makes the method simple, fast, and easy to interpret. However, it can also produce sharp boundaries between clusters, which may be less suitable for gradual cloud transitions or thin cloud areas.
+
+<p align="center">
+  <img src="k.png" alt="K-Means Workflow" width="90%">
+</p>
+
+### K-Means Workflow Summary
+
+| Step | Description |
+|---|---|
+| Data Input | Sentinel-2 Level-2A RGB bands |
+| Preprocessing | Read and stack B02, B03, B04 |
+| Feature Matrix | Convert image into RGB pixel vectors |
+| Clustering | Apply K-Means clustering |
+| Cloud Selection | Select brightest cluster |
+| Output | Binary cloud mask |
+
+---
+
+## Gaussian Mixture Model (GMM)
+
+Gaussian Mixture Model is also an unsupervised clustering method, but it uses a probabilistic approach. Instead of assigning pixels only by distance to a cluster centre, GMM models the pixel values as a mixture of Gaussian distributions.
+
+Each pixel is assigned to the component with the highest probability. This allows GMM to capture more gradual transitions between different surface or cloud types.
+
+Compared with K-Means, GMM is more flexible and can better represent semi-transparent clouds, cloud edges, and subtle spectral variations. However, it is also more computationally expensive.
+
+<p align="center">
+  <img src="gm.png" alt="GMM Workflow" width="90%">
+</p>
+
+### GMM Workflow Summary
+
+| Step | Description |
+|---|---|
+| Data Input | Sentinel-2 Level-2A RGB bands |
+| Preprocessing | Read and stack B02, B03, B04 |
+| Feature Matrix | Convert image into RGB pixel vectors |
+| Clustering | Apply Gaussian Mixture Model |
+| Cloud Selection | Select highest reflectance component |
+| Output | Binary cloud mask |
+
+---
+
+## Cloud Identification
+
+Clouds generally appear bright in true-colour Sentinel-2 imagery because they have high reflectance in the visible bands. After clustering, the cluster corresponding to the brightest cloud-covered regions was selected as the cloud class.
+
+The selected cloud cluster was then converted into a binary cloud mask:
+
+```text
+Cloud = 1
+Non-cloud = 0
+```
+
+In the final cloud mask, white pixels represent cloud-covered regions, while black pixels represent non-cloud regions or background areas.
+
+This cloud identification step was performed separately for both K-Means and GMM outputs, allowing the two methods to be compared visually and quantitatively.
