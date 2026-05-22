@@ -175,7 +175,7 @@ The resulting cloud mask appears relatively clean and spatially stable, although
 The Gaussian Mixture Model produced a more detailed and probabilistic classification of the Sentinel-2 RGB image. Unlike K-Means, GMM models the spectral distribution of pixels using multiple Gaussian probability distributions, allowing more gradual transitions between clusters.
 
 <p align="center">
-  <img src="gmm(1).png" alt="GMM Clustering Result" width="75%">
+  <img src="gmm.png" alt="GMM Clustering Result" width="75%">
 </p>
 
 The GMM classification map reveals considerably more spatial texture and fine-scale variability compared with the K-Means result. Cloud boundaries appear more complex, and subtle spectral differences within cloud-covered regions are represented more effectively.
