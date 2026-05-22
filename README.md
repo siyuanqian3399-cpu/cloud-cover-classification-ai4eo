@@ -253,3 +253,19 @@ Second, the study relied entirely on unsupervised clustering methods without usi
 Third, the original Sentinel-2 scene was heavily cloud-covered, which reduced the amount of visible surface information and increased the difficulty of separating cloud and non-cloud regions perfectly.
 
 Finally, both K-Means and GMM are sensitive to parameter selection, including the number of clusters or Gaussian components. Different parameter settings may produce different classification results and cloud masks.
+
+# Environmental and Computational Considerations
+
+This project was implemented using Google Colab and standard Python scientific computing libraries, including NumPy, Rasterio, Scikit-learn, and Matplotlib.
+
+Compared with deep learning approaches for cloud detection, the computational and environmental cost of this project is relatively low. Both K-Means and Gaussian Mixture Model (GMM) are classical machine learning methods that require significantly less computational power than convolutional neural networks or transformer-based remote sensing models.
+
+The analysis was performed using only three Sentinel-2 visible bands (B02, B03, and B04), which reduced both memory usage and processing time. However, Sentinel-2 imagery still contains a large number of pixels at 10 m spatial resolution, meaning that memory management remained important during processing.
+
+During experimentation, memory limitations were encountered within the standard free version of Google Colab, particularly when processing full-resolution multispectral imagery. To reduce RAM usage, the workflow avoided unnecessary intermediate variables and focused only on the required RGB bands instead of the full Sentinel-2 spectral dataset.
+
+From a computational perspective, K-Means clustering was more efficient and faster to execute than the Gaussian Mixture Model. The GMM approach required additional probabilistic calculations and therefore consumed more computational resources and processing time.
+
+Although the environmental impact of this project is relatively small compared with large-scale deep learning workflows, computational efficiency remains important in remote sensing applications because satellite datasets can become extremely large when processed at regional or global scales.
+
+Overall, the use of lightweight unsupervised machine learning methods allowed cloud classification to be performed with relatively low computational cost while still producing meaningful classification results.
