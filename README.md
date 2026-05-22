@@ -28,3 +28,20 @@ The RGB image generated from Sentinel-2 bands B02 (Blue), B03 (Green), and B04 (
   <img src="location.jpeg" alt="Study Area Location" width="48%">
   <img src="satellate.jpeg" alt="Satellite" width="48%">
 </p>
+## Data
+
+This project uses Sentinel-2 Level-2A optical satellite imagery obtained from the Copernicus Data Space Ecosystem. The selected product was acquired by Sentinel-2B on **30 June 2022** and corresponds to tile **T30UYC**.
+
+Sentinel-2 Level-2A data were selected because they provide atmospherically corrected surface reflectance, which is suitable for image classification and spectral analysis.
+
+The analysis uses three 10 m resolution optical bands:
+
+| Band | Description | Resolution |
+|------|-------------|------------|
+| B02 | Blue | 10 m |
+| B03 | Green | 10 m |
+| B04 | Red | 10 m |
+
+These bands were stacked to create a true-colour RGB image and were also used as input features for the unsupervised clustering methods.
+
+The downloaded Sentinel-2 product was provided in `.SAFE` format. The relevant image files were located in the `IMG_DATA/R10m/` folder as `.jp2` files.
