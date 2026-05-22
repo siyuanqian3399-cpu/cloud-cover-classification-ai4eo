@@ -48,3 +48,9 @@ The analysis uses three 10 m resolution optical bands:
 These bands were stacked to create a true-colour RGB image and were also used as input features for the unsupervised clustering methods.
 
 The downloaded Sentinel-2 product was provided in `.SAFE` format. The relevant image files were located in the `IMG_DATA/R10m/` folder as `.jp2` files.
+
+The original RGB image shows extensive cloud coverage across the scene, including dense bright cloud regions, semi-transparent cloud structures, and partially visible surface features beneath the cloud layer. These characteristics make the scene suitable for testing cloud classification methods using multispectral satellite imagery.
+
+<p align="center">
+  <img src="original.jpeg" alt="Original Sentinel-2 RGB Image" width="70%">
+</p>
