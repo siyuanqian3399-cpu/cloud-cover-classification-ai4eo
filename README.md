@@ -164,7 +164,7 @@ The K-Means cloud mask successfully identified the major cloud structures across
 The Gaussian Mixture Model produced a more spatially detailed classification map compared with K-Means. Because GMM uses a probabilistic clustering approach, it was able to capture smoother transitions between different spectral regions within the image.
 
 <p align="center">
-  <img src="gmm(1).png" alt="GMM Clustering Result" width="70%">
+  <img src="gmm.png" alt="GMM Clustering Result" width="70%">
 </p>
 
 The generated GMM cloud mask shows more fragmented and detailed cloud structures, especially around cloud edges and semi-transparent cloud regions.
