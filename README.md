@@ -68,7 +68,6 @@ Two unsupervised clustering methods were applied and compared:
 
 Both methods used the same input features: Sentinel-2 bands **B02 (Blue)**, **B03 (Green)**, and **B04 (Red)**.
 
----
 
 ## K-Means Clustering
 
@@ -97,7 +96,6 @@ K-Means performs **hard clustering**, meaning each pixel can only belong to one 
 | Cloud Selection | Select brightest cluster |
 | Output | Binary cloud mask |
 
----
 
 ## Gaussian Mixture Model (GMM)
 
@@ -122,7 +120,6 @@ Compared with K-Means, GMM is more flexible and can better represent semi-transp
 | Cloud Selection | Select highest reflectance component |
 | Output | Binary cloud mask |
 
----
 
 ## Cloud Identification
 
@@ -168,7 +165,6 @@ Several cloud characteristics can be observed from the result:
 
 The resulting cloud mask appears relatively clean and spatially stable, although some smaller cloud textures and semi-transparent cloud structures were not fully preserved.
 
----
 
 ## Gaussian Mixture Model (GMM) Results
 
@@ -195,7 +191,6 @@ The GMM cloud mask preserved more detailed cloud structures across the scene. In
 
 However, the higher sensitivity of GMM also introduced more fragmented patterns and isolated noisy regions within some parts of the classification map. This is particularly visible around highly textured cloud boundaries and partially illuminated regions.
 
----
 
 ## Quantitative and Visual Comparison
 
@@ -215,7 +210,6 @@ The visual comparison between K-Means and GMM demonstrates clear differences in 
 
 From the comparison, K-Means produced cleaner and more visually stable cloud masks, particularly for large dense cloud systems. In contrast, GMM preserved significantly more fine-scale cloud detail and was better able to represent gradual spectral transitions between clouds and background surfaces.
 
----
 
 # Discussion
 
