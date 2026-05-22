@@ -1,11 +1,11 @@
 # cloud-cover-classification-ai4eo
 
-## Project Overview
+# Project Overview
 This project focuses on cloud cover classification using Sentinel-2 satellite imagery. The objective is to identify cloud-covered pixels by analysing spectral information from selected bands and applying a machine learning model.
 
 The workflow includes data preprocessing, feature extraction, model training, and the generation of a cloud mask. The final output is a classification map distinguishing cloud and non-cloud regions.
 
-## Motivation
+# Motivation
 Optical satellite imagery, such as data from the Sentinel-2 mission, plays a key role in Earth Observation (EO) by providing high-resolution information about the Earth's surface. These data are widely used in applications such as land cover mapping, vegetation monitoring, environmental assessment, and disaster management.
 
 However, one of the main limitations of optical imagery is the presence of clouds. Clouds can partially or completely obscure the surface, leading to missing or unreliable information. As a result, many EO applications require an effective cloud detection step before further analysis can be performed.
@@ -16,7 +16,7 @@ Recent advances in artificial intelligence, particularly machine learning and de
 
 This project is motivated by the need for a balanced approach: developing a method that is both effective and computationally efficient. By using spectral features and a classical machine learning model, this work aims to provide a practical solution that can be applied in real-world EO workflows with lower environmental cost.
 
-## Study Area
+# Study Area
 
 The study area is located around London, United Kingdom, and was selected using a geographic bounding box covering longitudes from **-0.35 to 0.15** and latitudes from **51.35 to 51.65**. This bounding box was used to query Sentinel-2 Level-2A imagery from the Copernicus Data Space Ecosystem.
 
@@ -31,7 +31,7 @@ The RGB image generated from Sentinel-2 bands B02 (Blue), B03 (Green), and B04 (
   <img src="satellate.jpeg" alt="Satellite" width="48%">
 </p>
  
-## Data
+# Data
 
 This project uses Sentinel-2 Level-2A optical satellite imagery obtained from the Copernicus Data Space Ecosystem. The selected product was acquired by Sentinel-2B on **30 June 2022** and corresponds to tile **T30UYC**.
 
