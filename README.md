@@ -10,6 +10,7 @@
   - [K-Means Clustering](#k-means-clustering)
   - [Gaussian Mixture Model (GMM)](#gaussian-mixture-model-gmm)
   - [Cloud Identification](#cloud-identification)
+- [Video Explanation](#Video-Explanation)
 - [Results](#results)
   - [K-Means Clustering Results](#k-means-clustering-results)
   - [Gaussian Mixture Model (GMM) Results](#gaussian-mixture-model-gmm-results)
