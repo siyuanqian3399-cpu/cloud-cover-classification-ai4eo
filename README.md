@@ -1,4 +1,4 @@
-# cloud-cover-classification-ai4eo
+# Cloud-Cover-Classification-AI4EO
 # Table of Contents
 
 - [Project Overview](#project-overview)
