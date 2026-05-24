@@ -155,6 +155,14 @@ In the final cloud mask, white pixels represent cloud-covered regions, while bla
 
 This cloud identification step was performed separately for both K-Means and GMM outputs, allowing the two methods to be compared visually and quantitatively.
 
+# Video Explanation
+
+A short video explanation of this project is provided below. The video briefly introduces the main coding workflow, including Sentinel-2 RGB image processing, K-Means clustering, and Gaussian Mixture Model (GMM) classification.
+
+Most of the implemented code was adapted and modified from the Week 4 practical materials, with additional changes made for cloud classification using Sentinel-2 imagery.
+
+[Click here to watch the video](Video.mp4)
+
 # Results
 
 ## K-Means Clustering Results
