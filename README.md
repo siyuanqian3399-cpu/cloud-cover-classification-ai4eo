@@ -280,3 +280,41 @@ From a computational perspective, K-Means clustering was more efficient and fast
 Although the environmental impact of this project is relatively small compared with large-scale deep learning workflows, computational efficiency remains important in remote sensing applications because satellite datasets can become extremely large when processed at regional or global scales.
 
 Overall, the use of lightweight unsupervised machine learning methods allowed cloud classification to be performed with relatively low computational cost while still producing meaningful classification results.
+
+# References
+
+1. European Space Agency (ESA), 2024. *Sentinel-2 Mission Overview*. Available at:  
+   https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-2  
+   [Accessed 23 May 2026].
+
+2. Copernicus Data Space Ecosystem, 2024. *Sentinel-2 Data Collection*. Available at:  
+   https://dataspace.copernicus.eu/data-collections/copernicus-sentinel-missions/sentinel-2  
+   [Accessed 23 May 2026].
+
+3. Copernicus Sentinel Online, 2024. *Sentinel-2 Products Specification Document*. Available at:  
+   https://sentiwiki.copernicus.eu/web/s2-products  
+   [Accessed 23 May 2026].
+
+4. Pedregosa, F. et al., 2011. *Scikit-learn: Machine Learning in Python*. Journal of Machine Learning Research, 12, pp.2825–2830. Available at:  
+   https://jmlr.org/papers/v12/pedregosa11a.html  
+   [Accessed 23 May 2026].
+
+5. Scikit-learn Developers, 2024. *KMeans Clustering Documentation*. Available at:  
+   https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html  
+   [Accessed 23 May 2026].
+
+6. Scikit-learn Developers, 2024. *Gaussian Mixture Model Documentation*. Available at:  
+   https://scikit-learn.org/stable/modules/generated/sklearn.mixture.GaussianMixture.html  
+   [Accessed 23 May 2026].
+
+7. Rasterio Developers, 2024. *Rasterio Documentation*. Available at:  
+   https://rasterio.readthedocs.io/en/stable/  
+   [Accessed 23 May 2026].
+
+8. Harris, C.R. et al., 2020. *Array Programming with NumPy*. Nature, 585, pp.357–362. Available at:  
+   https://doi.org/10.1038/s41586-020-2649-2  
+   [Accessed 23 May 2026].
+
+9. Hunter, J.D., 2007. *Matplotlib: A 2D Graphics Environment*. Computing in Science & Engineering, 9(3), pp.90–95. Available at:  
+   https://matplotlib.org/stable/users/project/citing.html  
+   [Accessed 23 May 2026].
