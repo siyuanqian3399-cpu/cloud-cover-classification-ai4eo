@@ -17,7 +17,7 @@
 - [Discussion](#discussion)
 - [Limitations](#limitations)
 - [Environmental and Computational Considerations](#environmental-and-computational-considerations)
-- [Reference](#Reference)
+- [References](#References)
 
 # Project Overview
 This project focuses on cloud cover classification using Sentinel-2 satellite imagery. The objective is to identify cloud-covered pixels by analysing spectral information from selected bands and applying a machine learning model.
