@@ -17,6 +17,8 @@
 - [Discussion](#discussion)
 - [Limitations](#limitations)
 - [Environmental and Computational Considerations](#environmental-and-computational-considerations)
+-[Reference](#Reference)
+
 # Project Overview
 This project focuses on cloud cover classification using Sentinel-2 satellite imagery. The objective is to identify cloud-covered pixels by analysing spectral information from selected bands and applying a machine learning model.
 
@@ -318,3 +320,15 @@ Overall, the use of lightweight unsupervised machine learning methods allowed cl
 9. Hunter, J.D., 2007. *Matplotlib: A 2D Graphics Environment*. Computing in Science & Engineering, 9(3), pp.90–95. Available at:  
    https://matplotlib.org/stable/users/project/citing.html  
    [Accessed 23 May 2026].
+
+10. Zhu, Z. and Woodcock, C.E., 2012. *Object-based cloud and cloud shadow detection in Landsat imagery*. Remote Sensing of Environment, 118, pp.83–94. Available at:  
+    https://doi.org/10.1016/j.rse.2011.10.028  
+    [Accessed 23 May 2026].
+
+11. Hollstein, A. et al., 2016. *Ready-to-use methods for the detection of clouds, cirrus, snow, shadow, water and clear sky pixels in Sentinel-2 MSI images*. Remote Sensing, 8(8), 666. Available at:  
+    https://doi.org/10.3390/rs8080666  
+    [Accessed 23 May 2026].
+
+12. Mateo-García, G. et al., 2018. *Cloud masking for Sentinel-2 imagery from image sequences using a deep learning approach*. ISPRS Journal of Photogrammetry and Remote Sensing, 139, pp.1–15. Available at:  
+    https://doi.org/10.1016/j.isprsjprs.2018.02.019  
+    [Accessed 23 May 2026].
