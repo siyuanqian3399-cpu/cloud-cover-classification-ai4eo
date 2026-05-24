@@ -1,5 +1,22 @@
 # cloud-cover-classification-ai4eo
+# Table of Contents
 
+- [Project Overview](#project-overview)
+- [Motivation](#motivation)
+- [Study Area](#study-area)
+- [Data](#data)
+- [Methodology](#methodology)
+  - [Method Overview](#method-overview)
+  - [K-Means Clustering](#k-means-clustering)
+  - [Gaussian Mixture Model (GMM)](#gaussian-mixture-model-gmm)
+  - [Cloud Identification](#cloud-identification)
+- [Results](#results)
+  - [K-Means Clustering Results](#k-means-clustering-results)
+  - [Gaussian Mixture Model (GMM) Results](#gaussian-mixture-model-gmm-results)
+  - [Quantitative and Visual Comparison](#quantitative-and-visual-comparison)
+- [Discussion](#discussion)
+- [Limitations](#limitations)
+- [Environmental and Computational Considerations](#environmental-and-computational-considerations)
 # Project Overview
 This project focuses on cloud cover classification using Sentinel-2 satellite imagery. The objective is to identify cloud-covered pixels by analysing spectral information from selected bands and applying a machine learning model.
 
